@@ -1,7 +1,15 @@
 #include <iostream>
+#include <string>
 
 using namespace std;
 
+class signin
+{
+private:
+	char* name;
+	char* surname;
+	
+};
 class login
 {
 
