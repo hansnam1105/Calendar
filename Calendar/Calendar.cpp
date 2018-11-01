@@ -8,7 +8,10 @@ class signin
 private:
 	char* name;
 	char* surname;
-	
+	string id;
+	int pin;
+public:
+
 };
 class login
 {
