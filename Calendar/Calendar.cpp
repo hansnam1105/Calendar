@@ -39,7 +39,7 @@ public:
 		
 	}
 };
-class Login : protected Login
+class Login : protected Signin
 {
 private:
 	string insertid;
@@ -54,12 +54,18 @@ public:
 	}
 	int Check(string id, int pin) 
 	{
-		 
+		
 	}
 };
 class Cal
 {
+private:
+	int year;
+	int month;
+	Cal(int year, int month)
+	{
 
+	}
 };
 
 class printCal
