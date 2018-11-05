@@ -52,7 +52,7 @@ public:
 		cout << "PW : ";
 		cin >> insertpin;
 	}
-	int Check(string id, int pin) 
+	int Check(string id, int pin)
 	{
 		
 	}
@@ -117,7 +117,19 @@ public:
 
 class Schedule
 {
+private:
+	string schedulename;
+	int year, month, day;
 
+public:
+
+	void addSchedule()
+	{
+		cout << "스케줄 이름을 입력해주세요 : ";
+		cin >> schedulename;
+		cout << "일정 \n 년 : ";
+		cin >> year;
+	}
 };
 
 class Alarm 
