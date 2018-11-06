@@ -5,7 +5,7 @@ using namespace std;
 
 class Signin
 {
-private:
+protected:
 	char* uname;
 	char* surname;
 	int bday;
@@ -52,8 +52,20 @@ public:
 		cout << "PW : ";
 		cin >> insertpin;
 	}
-	int Check(string id, int pin)
+	int Check() 
 	{
+		if ((insertid == id) && (insertpin == pin))
+		{
+			return 0;
+		}
+		else if((insertid == id) && (insertpin != pin))
+		{
+			cout << "Wrong Password" << endl;
+		}
+		else if ((insertid != id) && (insertpin == pin))
+		{
+			cout << "Wrong ID" << endl;
+		}
 		
 	}
 };
