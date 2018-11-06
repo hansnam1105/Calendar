@@ -57,6 +57,42 @@ public:
 		
 	}
 };
+
+class Schedule
+{
+private:
+	string schedulename;
+	int year, month, day;
+	int hour, minute;
+	int select;
+public:
+
+	void addSchedule()
+	{
+		cout << "스케줄 이름을 입력해주세요 : ";
+		cin >> schedulename;
+		cout << "일정 \n 년 : ";
+		cin >> year;
+		cout << "달 : ";
+		cin >> month;
+		cout << "일 : ";
+		cin >> day;
+		cout << "1. 하루종일\n2.시간설정" << endl;
+		cin >> select;
+		if (select == 1)
+		{
+
+		}
+		else if (select == 2)
+		{
+			cout << "시간 : ";
+			cin >> hour;
+			cout << "분 : ";
+			cin >> minute;
+		}
+	}
+};
+
 class Cal
 {
 private:
@@ -115,22 +151,7 @@ public:
 	}
 };
 
-class Schedule
-{
-private:
-	string schedulename;
-	int year, month, day;
 
-public:
-
-	void addSchedule()
-	{
-		cout << "스케줄 이름을 입력해주세요 : ";
-		cin >> schedulename;
-		cout << "일정 \n 년 : ";
-		cin >> year;
-	}
-};
 
 class Alarm 
 {
@@ -145,7 +166,7 @@ int main(void)
 	cin >> choice;
 	if (choice == 1)
 	{
-
+		
 	}
 	else if (choice == 2)
 	{
