@@ -56,7 +56,7 @@ public:
 	{
 		if ((insertid == id) && (insertpin == pin))
 		{
-			return 0;
+			
 		}
 		else if((insertid == id) && (insertpin != pin))
 		{
@@ -91,17 +91,14 @@ public:
 		cin >> day;
 		cout << "1. 하루종일\n2.시간설정" << endl;
 		cin >> select;
-		if (select == 1)
-		{
-
-		}
-		else if (select == 2)
+		if (select == 2)
 		{
 			cout << "시간 : ";
 			cin >> hour;
 			cout << "분 : ";
 			cin >> minute;
 		}
+
 	}
 };
 
@@ -178,15 +175,21 @@ int main(void)
 	cin >> choice;
 	if (choice == 1)
 	{
-		
+		Login login;
+		login.Insert();
+		while (1)
+		{
+			login.Check();
+
+		}
 	}
 	else if (choice == 2)
 	{
-
+		Signin::Signin();
 	}
 	else
 	{
-
+		cout << "다시 선택해주십시오";
 	}
 
 }
