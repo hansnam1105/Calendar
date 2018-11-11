@@ -173,12 +173,6 @@ public:
 };
 
 
-
-class Alarm 
-{
-
-};
-
 int main(void)
 {
 	int choice;
